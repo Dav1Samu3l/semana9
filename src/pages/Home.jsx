@@ -12,11 +12,11 @@ export const Home = () => {
         <Formulario />
       </div>
       <div className="row">
+        
+        <TodoList name= "addToDo" onClick={addToDo} />
         <TodoList name="A fazer" list={pendingToDos} />
         <TodoList name="Finalizados" list={completedToDos} />
       </div>
     </ToDoProvider>
   );
 };
-
-export default Home;

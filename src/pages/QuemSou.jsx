@@ -13,7 +13,7 @@ const redes = [
   },
   {
     icone: "bi-github text-light-emphasis",
-    link: "https://github.com/FullStack-Itaguacu",
+    link: "https://github.com/Dav1Samu3l",
   },
 ];
 

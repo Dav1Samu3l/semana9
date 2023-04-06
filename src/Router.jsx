@@ -8,19 +8,20 @@
  * }
  */
 
-import { createBrowserRouter } from "react-router-dom";
-import { QuemSou } from "./pages/QuemSou";
-import { Home } from "./pages/Home";
+import { createBrowserRouter } from 'react-router-dom';
+import { App } from './App';
+import { Home } from './pages/Home';
+import { QuemSou } from './pages/QuemSou';
 
-import { App } from "./App";
-
-export const appRouter = createBrowserRouter([
+export const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     children: [
-      { path: "/home", element: <Home /> },
-      { path: "/quem-sou", element: <QuemSou /> },
+      { path: '/', element: <Home /> },
+      { path: '/quemsou', element: <QuemSou /> },
+     
     ],
   },
 ]);
+

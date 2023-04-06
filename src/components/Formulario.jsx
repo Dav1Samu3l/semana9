@@ -1,11 +1,13 @@
 import { useRef } from "react";
+import { useToDos } from "../contexts/useToDos";
 
-export const Formulario = ({ onSubmit }) => {
+export const Formulario = () => {
   const textElementRef = useRef();
+  const { addToDo } = useToDos();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSubmit(textElementRef.current.value);
+    addToDo(textElementRef.current.value);
     textElementRef.current.value = "";
   };
 
@@ -28,7 +30,8 @@ export const Formulario = ({ onSubmit }) => {
           type="submit"
           id="button-addon2"
         >
-          Adicionar tarefa
+          Adicionar
+
         </button>
       </form>
     </div>

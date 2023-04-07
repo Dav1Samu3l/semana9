@@ -1,6 +1,5 @@
 import React from "react";
-import { useToDos } from "../contexts/useToDos";
-
+import { useToDos } from "../contexts/useToDos"
 export const TodoItem = ({ todo }) => {
   const { markTodo } = useToDos();
 
